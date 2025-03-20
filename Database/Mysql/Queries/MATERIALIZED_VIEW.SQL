@@ -1,0 +1,8 @@
+CREATE MATERIALIZED VIEW EmployeeSummary
+REFRESH FAST ON COMMIT AS
+SELECT Department, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY Department;
+
+
+REFRESH MATERIALIZED VIEW EmployeeSummary;
