@@ -1,2 +1,0 @@
-# Mern-Stack
-hello,,
